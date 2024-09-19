@@ -2,12 +2,11 @@ import cv2
 import numpy as np
 
 # Specify the path to your image
-image_path = "Dog.jpeg"  # Replace with the correct path to your image
+image_path = "Dog.jpeg"  
 
 # Load the image
 image = cv2.imread(image_path)
 
-# Check if the image was loaded successfully
 if image is None:
     print("Error: Could not load the image. Please check the path.")
 else:
@@ -25,9 +24,6 @@ else:
 
     # Loop through detected contours and count them
     for contour in contours:
-        # You can apply additional filtering based on contour area or other criteria
-        # For example, to count only larger objects, you can add:
-        # if cv2.contourArea(contour) > min_area:
         object_count += 1
     
     # Print the count of objects
