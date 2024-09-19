@@ -1,7 +1,7 @@
 import cv2
 
 # Specify the image path
-image_path = "Dog.jpeg"  # Update this with your actual image path
+image_path = "Dog.jpeg"  
 
 # Read the image
 image = cv2.imread(image_path)
